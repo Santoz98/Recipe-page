@@ -1,0 +1,242 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	padding: 2vw;
+	padding-bottom: 0.5vw;
+
+	background: #fafafa;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-family: "Playfair Display", serif;
+}
+
+.header-text {
+	display: flex;
+	gap: 20px;
+	margin: 1.5rem 0;
+}
+
+.header-text-content {
+	font-style: italic;
+	color: #4f4f4f;
+	font-size: 0.75rem;
+	font-weight: 500;
+}
+
+.sixdots {
+	align-self: flex-start;
+	padding-top: 0.25rem;
+}
+.cake {
+	width: 100%;
+}
+
+.orange {
+	color: #f2994a;
+}
+
+.timing-content {
+	display: flex;
+	gap: 15px;
+}
+
+.timing-name {
+	font-weight: bold;
+	font-size: 0.5rem;
+	text-transform: uppercase;
+	color: #bdbdbd;
+}
+
+.timing-name2 {
+	font-size: 0.625rem;
+	font-weight: 500;
+	color: #333333;
+}
+
+.timing {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		"item1 . ."
+		"item2 item3 item4";
+	padding: 2rem 0;
+	grid-row-gap: 1.5rem;
+	grid-column-gap: 3rem;
+}
+
+.item1 {
+	grid-area: item1;
+}
+.item2 {
+	grid-area: item2;
+}
+.item3 {
+	grid-area: item3;
+}
+.item4 {
+	grid-area: item4;
+}
+
+.ingredients-title,
+.instructions-title {
+	font-family: "Playfair Display", serif;
+	color: #333333;
+	font-weight: bold;
+	font-size: 1.125rem;
+	margin: 1.5rem 0;
+}
+.ingredients-title {
+	margin-top: 0;
+}
+
+.instructions-title {
+	font-size: 1.5rem;
+}
+
+.ingredients-list {
+	line-height: 200%;
+	font-size: 0.875rem;
+}
+
+.italic {
+	font-family: "Playfair Display", serif;
+	color: #333333;
+	font-size: 1rem;
+	font-weight: normal;
+	margin-bottom: 1rem;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.3);
+	margin-right: 0.5rem;
+	margin-bottom: 0.7rem;
+	outline: none;
+	border: 1px solid #828282;
+}
+
+.cheesecake {
+	margin-top: 1rem;
+}
+
+.instructions-content {
+	display: flex;
+	margin-bottom: 1rem;
+	gap: 1rem;
+}
+
+.numbers {
+	align-self: flex-start;
+	background: #f2994a;
+	border-radius: 6px;
+	color: white;
+
+	text-align: center;
+	display: block;
+	flex: 0 0 35px;
+	padding: 0.5rem 0;
+
+	font-weight: 700;
+}
+
+.details {
+	line-height: 150%;
+	font-size: 1rem;
+}
+
+.source {
+	font-style: italic;
+	color: #bdbdbd;
+	font-size: 0.75rem;
+}
+
+.source a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+
+	cursor: pointer;
+}
+
+.orange {
+	color: #f2994a;
+}
+.footer {
+	font-family: "Montserrat", sans-serif;
+	padding: 1rem;
+	padding-bottom: 0.2vw;
+
+	text-align: center;
+
+	color: #828282;
+
+	font-size: 0.7rem;
+}
+
+.footer a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+	html {
+		margin: 0;
+		font-size: 19px;
+
+		padding: 4vw 10vw;
+		padding-bottom: 0.5vw;
+
+		background: #fafafa;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+	.content {
+		width: 65%;
+	}
+
+	.cake {
+		margin-bottom: 3rem;
+	}
+	.timing {
+		box-shadow: 0px 0px 20px 0px #0000001a;
+		border-radius: 12px;
+		padding: 4rem 2rem;
+		max-width: 220px;
+		align-self: flex-start;
+
+		width: 30%;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"item1"
+			"item2"
+			"item3"
+			"item4";
+	}
+
+	.timing-content > div {
+		line-height: 120%;
+	}
+
+	.source a {
+		display: inline;
+	}
+
+	input[type="checkbox"] {
+		transform: scale(1.5);
+	}
+}
